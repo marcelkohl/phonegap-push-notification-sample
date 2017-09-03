@@ -1,14 +1,4 @@
 {
-    "phonegap-plugin-push": {
-        "source": {
-            "type": "registry",
-            "id": "phonegap-plugin-push@2.0.0"
-        },
-        "is_top_level": true,
-        "variables": {
-            "SENDER_ID": "721393051486"
-        }
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
@@ -16,5 +6,15 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "phonegap-plugin-push": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-push@^2.0.0"
+        },
+        "is_top_level": true,
+        "variables": {
+            "SENDER_ID": "995133419098"
+        }
     }
 }

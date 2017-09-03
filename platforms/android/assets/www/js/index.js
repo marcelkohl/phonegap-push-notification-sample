@@ -19,6 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        alert('aqui');
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -27,7 +28,22 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        alert('aqui2');
         this.receivedEvent('deviceready');
+
+        var push = PushNotification.init({ "android": {"senderID": "995133419098"}});
+         push.on('registration', function(data) {
+         console.log(data.registrationId);
+         document.getElementById("gcm_id").innerHTML = data.registrationId;
+         });
+
+         push.on('notification', function(data) {
+         alert(data.title+" Message: " +data.message);
+         });
+
+         push.on('error', function(e) {
+         alert(e);
+         });
     },
 
     // Update DOM on a Received Event

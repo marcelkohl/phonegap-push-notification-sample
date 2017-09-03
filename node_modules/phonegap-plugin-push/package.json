@@ -10,7 +10,7 @@
         "spec": "2.0.0",
         "type": "version"
       },
-      "/opt/lampp/htdocs/www/phonegap-background/hello/node_modules"
+      "/opt/lampp/htdocs/www/phonegap-background/hello2/node_modules"
     ]
   ],
   "_from": "phonegap-plugin-push@2.0.0",
@@ -45,7 +45,7 @@
   "_shasum": "161289b4fdebd0b52a4d5a10520d156083eecf73",
   "_shrinkwrap": null,
   "_spec": "phonegap-plugin-push@2.0.0",
-  "_where": "/opt/lampp/htdocs/www/phonegap-background/hello/node_modules",
+  "_where": "/opt/lampp/htdocs/www/phonegap-background/hello2/node_modules",
   "author": {
     "name": "Adobe PhoneGap Team"
   },
