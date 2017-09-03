@@ -30,6 +30,10 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
+        if (typeof PushNotification == "undefined") {
+            alert('nao definido');
+        }
+
         var push = PushNotification.init({ "android": {"senderID": "995133419098"}});
          push.on('registration', function(data) {
          alert(data.registrationId);
