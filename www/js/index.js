@@ -30,8 +30,10 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
-        if (typeof PushNotification == "undefined") {
+        if (typeof window.plugins.PushNotification == "undefined") {
             alert('nao definido');
+        } else {
+            alert('definido');
         }
 
         var push = PushNotification.init({ "android": {"senderID": "995133419098"}});
